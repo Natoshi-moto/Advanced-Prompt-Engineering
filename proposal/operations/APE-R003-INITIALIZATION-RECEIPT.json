@@ -1,0 +1,44 @@
+{
+  "schema": "ape.proposal-receipt/v1",
+  "receipt_id": "APE-R003-INITIALIZATION",
+  "date": "2026-07-14",
+  "repository": "Natoshi-moto/Advanced-Prompt-Engineering",
+  "branch": "agent/ape-r003-ambiguity-performance",
+  "baseline_commit": "80ce1436bc6f85d92176a91ba68f37bf3ae0ea27",
+  "source": {
+    "name": "Pasted text(457).txt",
+    "bytes": 13506,
+    "lines": 174,
+    "sha256": "12dc5e8a6e152acdedc12e9abd880af808e09efd9096f7bf687920c9d36937ad",
+    "authority": "UNTRUSTED_USER_SUPPLIED_SOURCE"
+  },
+  "claims": {
+    "claim_falsification_programme": "CANDIDATE",
+    "ambiguity_performance_thesis": "CANDIDATE",
+    "lexical_map": "LATERAL",
+    "semantic_action_firewall": "CANDIDATE",
+    "sovereign_social_platform": "CANDIDATE",
+    "safety": "UNVERIFIED",
+    "novelty": "UNVERIFIED",
+    "low_resource_operation": "UNVERIFIED",
+    "compression_claims": "UNVERIFIED"
+  },
+  "verification": {
+    "source_hash_computed": true,
+    "repository_files_read_via_github": true,
+    "etymology_sources_inspected": true,
+    "protocol_prior_art_sources_inspected": true,
+    "repository_verifier_run_on_branch": false,
+    "experiments_run": false,
+    "independent_review": false
+  },
+  "limitations": [
+    "The scratch workspace was not a local checkout of the repository.",
+    "No experimental result exists in this initialization.",
+    "Etymology is used as a generative lens, not causal evidence.",
+    "The platform vision has not undergone a complete prior-art review.",
+    "The supplied paper's citations and numerical claims were not exhaustively audited."
+  ],
+  "next_action": "Design SAF threat model and a minimal ambiguity-to-action benchmark before implementation.",
+  "promotion_authority": "HUMAN_ONLY"
+}

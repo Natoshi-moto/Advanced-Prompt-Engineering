@@ -1,0 +1,31 @@
+{
+  "schema": "ape.proposal-receipt/v1",
+  "receipt_id": "APE-R003-ADDENDUM-001",
+  "date": "2026-07-14",
+  "repository": "Natoshi-moto/Advanced-Prompt-Engineering",
+  "branch": "agent/ape-r003-ambiguity-performance",
+  "baseline_receipt": "APE-R003-INITIALIZATION",
+  "source_propositions": [
+    "Any type of resource, storage, ram if possible, cpu if possible only if it makes sense",
+    "bandwidth",
+    "It's .html files they can be served as websites or p2p"
+  ],
+  "changes": [
+    "Expanded the market from mining capacity to typed resource capacity.",
+    "Bound RAM to execution leases unless a viable independent allocation mechanism is demonstrated.",
+    "Added direction-specific bandwidth and relay service boundaries.",
+    "Defined HTML kernels as content-addressed artifacts usable over local, web, P2P, and Noted mounting modes.",
+    "Separated artifact inspection, sandboxed execution, and capability grant."
+  ],
+  "claims": {
+    "resource_market_feasibility": "UNVERIFIED",
+    "html_kernel_portability": "CANDIDATE",
+    "html_kernel_safety": "UNVERIFIED",
+    "p2p_distribution": "CANDIDATE"
+  },
+  "tests_run": [
+    "JSON_PARSE"
+  ],
+  "experiments_run": false,
+  "promotion_authority": "HUMAN_ONLY"
+}

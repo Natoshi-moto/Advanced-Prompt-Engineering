@@ -1,0 +1,42 @@
+{
+  "schema": "ape.lab-state/v0.1-candidate",
+  "lab_id": "APE-PROVIDER-NEUTRAL-LAB",
+  "state": "CANDIDATE",
+  "repository": "Natoshi-moto/Advanced-Prompt-Engineering",
+  "proposal_branch": "agent/ape-r003-ambiguity-performance",
+  "baseline_commit": "80ce1436bc6f85d92176a91ba68f37bf3ae0ea27",
+  "research_lines": [
+    {
+      "id": "APE-X001",
+      "name": "Claim Falsification",
+      "state": "CANDIDATE"
+    },
+    {
+      "id": "APE-X002",
+      "name": "Ambiguity-Performance",
+      "state": "CANDIDATE"
+    },
+    {
+      "id": "APE-X003",
+      "name": "Noted Sovereign Work and Capacity Exchange",
+      "state": "CANDIDATE"
+    }
+  ],
+  "available_seats": [
+    "AUTHOR",
+    "ADVERSARY",
+    "REPRODUCER",
+    "EVALUATOR",
+    "SYNTHESIZER",
+    "CUSTODIAN"
+  ],
+  "active_packets": [],
+  "completed_packets": [],
+  "open_corrections": [
+    "CORR-APE-0001",
+    "CORR-APE-0002"
+  ],
+  "autonomous_external_effects": false,
+  "human_promotion_required": true,
+  "next_packet": "APE-PKT-0001-SAF-THREAT-MODEL"
+}
