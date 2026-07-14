@@ -1,15 +1,16 @@
 # Repository status
 
 - **Round:** `APE-R001`
-- **Mode:** `FOUNDATION_CANDIDATE_VERIFIED`
-- **Accepted canonical target:** none yet
-- **Active task:** `TASK-APE-0001`
-- **Active route:** `operations/routes/ROUTE-APE-0001.md`
+- **Mode:** `FOUNDATION_PROMOTED`
+- **Foundation:** `OPERATIONAL`
+- **Accepted canonical target:** `7da81fe1ce365703ab25ad044826944b45fbbb66`
+- **Source pull request:** `#1`
+- **Active task:** `TASK-APE-0002`
+- **Active route:** `operations/routes/ROUTE-APE-0002.md`
 - **Promotion authority:** `HUMAN_ONLY`
 - **Assurance blocks:** 0 recorded
 - **Defect blocks:** 0 recorded
-- **Structural verification:** GitHub Actions run `29351944204` succeeded on PR #1 head `95d259f61de04f21ee53443c4782372519328868`
 
-This branch proposes the initial agent-friendly foundation. It is not canonical until the human reviews and explicitly merges the pull request.
+The APE-R001 agent-friendly foundation was promoted to `main` on 2026-07-14 by explicit human authorization. The accepted state includes provider-neutral agent instructions, epistemic-state discipline, versioned prompt objects, experiment and audit structures, and repository verification.
 
-The verifier demonstrated that the required files, status/task/route contracts, and declared prompt SHA-256 were internally consistent on the tested head. It did not demonstrate prompt effectiveness, novelty, superiority, safety, transferability, or external replication.
+The foundation's structural consistency and candidate prompt hash were demonstrated by GitHub Actions before promotion. Prompt effectiveness, novelty, superiority, safety, transferability, and independent replication remain unverified.
