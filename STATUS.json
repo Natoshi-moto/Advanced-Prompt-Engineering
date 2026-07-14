@@ -2,18 +2,23 @@
   "schema": "ape.status/v1",
   "repository_id": "ADVANCED-PROMPT-ENGINEERING",
   "current_round": "APE-R001",
-  "current_mode": "FOUNDATION_CANDIDATE_VERIFIED",
-  "foundation_status": "CANDIDATE",
-  "canonical_target": null,
+  "current_mode": "FOUNDATION_PROMOTED",
+  "foundation_status": "OPERATIONAL",
+  "canonical_target": {
+    "commit": "7da81fe1ce365703ab25ad044826944b45fbbb66",
+    "source_pr": 1,
+    "status": "ACCEPTED_WORKING_STATE",
+    "promoted_date": "2026-07-14"
+  },
   "active_tasks": [
-    "TASK-APE-0001"
+    "TASK-APE-0002"
   ],
-  "active_route": "operations/routes/ROUTE-APE-0001.md",
+  "active_route": "operations/routes/ROUTE-APE-0002.md",
   "assurance_blocks": [],
   "open_assurance_blocks": 0,
   "open_defect_blocks": 0,
-  "last_completed_action": "PR1_STRUCTURAL_VALIDATION_SUCCEEDED_ON_HEAD_95D259F61DE04F21EE53443C4782372519328868",
-  "next_action_id": "ACT-APE-0001_REVIEW_FOUNDATION_PR",
+  "last_completed_action": "APE_R001_FOUNDATION_PROMOTED_VIA_PR1",
+  "next_action_id": "ACT-APE-0002_PREPARE_EXP0001_CONTROLLED_RUNS",
   "promotion_authority": "HUMAN_ONLY",
   "epistemic_states": [
     "LATERAL",
