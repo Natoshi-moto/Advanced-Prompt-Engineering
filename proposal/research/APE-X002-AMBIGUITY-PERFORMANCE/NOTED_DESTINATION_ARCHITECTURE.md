@@ -22,6 +22,25 @@ settlement mechanisms.
 
 No one interpretation inherits authority until adopted in a later route.
 
+The resource market is broader than mining. Candidate resource types include:
+
+| Resource | Commercial unit | Important boundary |
+|---|---|---|
+| storage | byte-time plus replication level | content policy, deletion, durability, encryption |
+| RAM | byte-time inside a declared execution lease | normally not separable from the compute job using it |
+| CPU | core-time or verified job | sandboxing, architecture, benchmark, side channels |
+| GPU/accelerator | device-time, memory class, or verified job | model/data isolation, thermal and energy accounting |
+| bandwidth | direction-specific bytes at measured service levels | abuse, jurisdiction, privacy, congestion, exit-node liability |
+| relay service | availability, retention, and delivery window | censorship policy, spam, data loss, operator visibility |
+| archival replication | object-time with challenge proofs | availability is not correctness or legality |
+| AI inference | bounded job, tokens, or evaluated deliverable | privacy, model identity, tool authority, quality variance |
+
+Every resource offer needs a unit, locality, availability window, measurement
+method, verification method, isolation promise, data policy, price, cancellation
+rule, and failure remedy. A resource should not be listed merely because it is
+physically present; it must be safely allocatable and its delivery must be
+measurable.
+
 ## System shape
 
 ```text
@@ -79,6 +98,11 @@ Installing a kernel does not grant it authority. Noted must show a permission
 diff, verify signatures and hashes, run conformance tests, isolate execution,
 and require explicit pacts for external effects.
 
+The intended kernel carrier is a `.html` file. The same exact bytes may be
+opened locally, served as a website, distributed as a peer-to-peer object, or
+mounted in Noted. Distribution mode does not change artifact identity, and
+artifact identity does not grant capabilities. See `HTML_KERNEL_DISTRIBUTION.md`.
+
 ## Minimal shared economic vocabulary
 
 | Object | Purpose |
@@ -131,4 +155,3 @@ The smallest end-to-end proof should avoid public currency and arbitrary code:
 
 Only after this works should the proof expand to compute leasing and third-party
 kernel execution.
-
