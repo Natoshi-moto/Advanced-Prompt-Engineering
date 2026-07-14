@@ -1,0 +1,41 @@
+{
+  "schema": "ape.task/v1",
+  "task_id": "TASK-APE-0001",
+  "title": "Establish agent-friendly prompt research foundation",
+  "state": "IMPLEMENTED",
+  "baseline": {
+    "branch": "main",
+    "commit": "484bf9e1291cd466d7a17d99541d20ce4294f9b0"
+  },
+  "proposal_branch": "agent/ape-r001-agent-friendly-foundation",
+  "objective": "Create a public, provider-neutral, agent-friendly repository structure inspired by the Nexus Lab governance model without copying private corpus material or crypto-specific machinery.",
+  "read_scope": [
+    "Natoshi-moto/Lab repository orientation and governance files",
+    "Natoshi-moto/Advanced-Prompt-Engineering initial commit",
+    "Current candidate adversarial software audit prompt"
+  ],
+  "write_scope": [
+    "Repository orientation",
+    "Agent instructions",
+    "Governance and epistemic-state documentation",
+    "Prompt and experiment object structure",
+    "Task, route, receipt, verification, CI, and pull-request scaffolding"
+  ],
+  "prohibited_actions": [
+    "Direct writes to main",
+    "Merge or release",
+    "Repository settings changes",
+    "Force-push or branch deletion",
+    "Copy private Nexus corpus content",
+    "Represent the candidate prompt as proven or novel"
+  ],
+  "acceptance": [
+    "All required entry files exist",
+    "STATUS.json is valid and names this task and route",
+    "Prompt manifest hash matches PROMPT.md",
+    "Verifier exits zero",
+    "Draft pull request targets main",
+    "Human remains sole promotion authority"
+  ],
+  "promotion_authority": "HUMAN_ONLY"
+}
