@@ -1,0 +1,34 @@
+{
+  "schema": "ape.prompt-manifest/v1",
+  "prompt_id": "APE-PROMPT-0001",
+  "slug": "adversarial-software-corpus-audit",
+  "version": "v0.1.0",
+  "state": "CANDIDATE",
+  "prompt_file": "PROMPT.md",
+  "prompt_sha256": "3dc753ff934b39e3c6ad833b6a83281de1a365697caac0d9e0a58d542727077f",
+  "provenance": {
+    "authoring_context": "Human-directed ChatGPT collaboration",
+    "captured_date": "2026-07-14",
+    "source_status": "Exact candidate text captured for controlled evaluation"
+  },
+  "intended_use": [
+    "Audit mixed software corpora and reports",
+    "Separate implementation from specification and surrogate tests",
+    "Reproduce security claims before accepting fixes",
+    "Audit the evidentiary quality of prior audits"
+  ],
+  "mechanism_hypotheses": [
+    "Concrete apparent evidentiary hazards elicit more operational scrutiny than generic requests to be critical",
+    "Mandatory category separation reduces implementation/specification conflation",
+    "Exact execution and adversarial matrices reduce unsupported fix claims"
+  ],
+  "claims_not_established": [
+    "Novelty",
+    "Superiority to simpler prompts",
+    "Transfer across models or domains",
+    "Reliability under repeated use",
+    "Safety for autonomous production changes",
+    "Every token or framing element is load-bearing"
+  ],
+  "promotion_authority": "HUMAN_ONLY"
+}
