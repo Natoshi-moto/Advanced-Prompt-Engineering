@@ -2,7 +2,7 @@
   "schema": "ape.status/v1",
   "repository_id": "ADVANCED-PROMPT-ENGINEERING",
   "current_round": "APE-R001",
-  "current_mode": "FOUNDATION_CANDIDATE",
+  "current_mode": "FOUNDATION_CANDIDATE_VERIFIED",
   "foundation_status": "CANDIDATE",
   "canonical_target": null,
   "active_tasks": [
@@ -12,7 +12,7 @@
   "assurance_blocks": [],
   "open_assurance_blocks": 0,
   "open_defect_blocks": 0,
-  "last_completed_action": "INITIAL_REPOSITORY_CREATED_WITH_LICENSE",
+  "last_completed_action": "PR1_STRUCTURAL_VALIDATION_SUCCEEDED_ON_HEAD_95D259F61DE04F21EE53443C4782372519328868",
   "next_action_id": "ACT-APE-0001_REVIEW_FOUNDATION_PR",
   "promotion_authority": "HUMAN_ONLY",
   "epistemic_states": [
