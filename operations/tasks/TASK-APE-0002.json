@@ -1,0 +1,42 @@
+{
+  "schema": "ape.task/v1",
+  "task_id": "TASK-APE-0002",
+  "title": "Prepare EXP-0001 controlled run package",
+  "state": "CANDIDATE",
+  "baseline": {
+    "branch": "main",
+    "commit": "7da81fe1ce365703ab25ad044826944b45fbbb66"
+  },
+  "objective": "Turn the existing EXP-0001 design into a reproducible, blinded, execution-ready comparison of the bare task, conventional expert framing, the full candidate prompt, and at least one ablation.",
+  "read_scope": [
+    "prompts/adversarial-software-corpus-audit/v0.1.0/**",
+    "experiments/EXP-0001/**",
+    "docs/METHOD.md",
+    "docs/EPISTEMIC_STATES.md",
+    "governance/CONSTITUTION.md"
+  ],
+  "write_scope": [
+    "experiments/EXP-0001 run-package specifications",
+    "versioned condition prompts and manifests",
+    "ground-truth fixture manifests",
+    "evaluation rubric and blinded scoring materials",
+    "operations receipts for preparation work"
+  ],
+  "prohibited_actions": [
+    "Direct writes to main",
+    "Merge or canonical promotion",
+    "Representing design completion as an experimental result",
+    "Using private or unauthorized corpora",
+    "Inventing model outputs or execution logs",
+    "Changing APE-PROMPT-0001 v0.1.0 bytes"
+  ],
+  "acceptance": [
+    "Exact condition prompt hashes exist",
+    "Ground truth is established independently of scored model outputs",
+    "Randomization and blinding are specified",
+    "False-positive controls are included",
+    "Raw-output and execution receipt schemas are defined",
+    "Repository verifier passes"
+  ],
+  "promotion_authority": "HUMAN_ONLY"
+}
