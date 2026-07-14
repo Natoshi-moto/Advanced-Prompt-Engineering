@@ -7,7 +7,7 @@
 - Base repository: `Natoshi-moto/Advanced-Prompt-Engineering`
 - Base commit: `484bf9e1291cd466d7a17d99541d20ce4294f9b0`
 - Proposal branch: `agent/ape-r001-agent-friendly-foundation`
-- Pre-receipt branch head: `73a1e449c5f85c49fb174a9e846efff89d7d320c`
+- Initial PR head tested by CI: `95d259f61de04f21ee53443c4782372519328868`
 - Promotion authority: `HUMAN_ONLY`
 
 ## Reference files actually inspected
@@ -47,11 +47,9 @@ The private Nexus corpus, snapshots, task evidence, and project-specific impleme
 - State: `CANDIDATE`
 - Declared SHA-256: `3dc753ff934b39e3c6ad833b6a83281de1a365697caac0d9e0a58d542727077f`
 
-The hash was calculated over the candidate text before repository insertion. Repository-side verification is delegated to `scripts/verify_repo.py` and GitHub Actions.
+## Local execution boundary
 
-## Execution record
-
-Attempted local command:
+Attempted command:
 
 ```bash
 rm -rf /tmp/ape && \
@@ -69,16 +67,31 @@ fatal: unable to access 'https://github.com/Natoshi-moto/Advanced-Prompt-Enginee
 
 Exit code: `128`
 
-This is an execution-environment network boundary, not a repository verifier result. No local pass is claimed.
+This was an execution-environment network boundary, not a repository verifier result. No local pass is claimed.
+
+## GitHub Actions execution
+
+- Pull request: `#1`
+- Workflow: `Validate repository contracts`
+- Run ID: `29351944204`
+- Job ID: `87150075991`
+- Tested PR head: `95d259f61de04f21ee53443c4782372519328868`
+- Runner: Ubuntu 24.04
+- Verification command: `python3 scripts/verify_repo.py`
+- Job conclusion: `success`
+
+The successful run demonstrates internal structural consistency on that exact tested head: required files existed; `STATUS.json`, active task, and route contracts were valid; the candidate prompt file existed; and its SHA-256 matched the manifest.
+
+It does not demonstrate prompt effectiveness, novelty, superiority, safety, transferability, independent replication, or readiness for autonomous use.
 
 ## Current disposition
 
 - Foundation structure: `IMPLEMENTED` on proposal branch.
-- Structural verifier result: `UNVERIFIED` pending GitHub Actions execution on the draft pull-request head.
+- Structural contracts and prompt hash on tested head: `DEMONSTRATED`.
 - Candidate prompt effectiveness: `UNVERIFIED`.
 - Novelty and superiority: `UNVERIFIED`.
 - Canonical promotion: not authorized.
 
 ## Next action
 
-Open a draft pull request, inspect the exact-head workflow result, and leave canonical disposition to the human.
+Review the final draft pull-request head, require successful exact-head validation, and leave canonical disposition to the human.
