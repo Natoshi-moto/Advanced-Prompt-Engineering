@@ -1,0 +1,33 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node and general build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Editor and operating-system noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local-only research material
+corpus/local-only/
+private/
+secrets/
+
+# Temporary experiment output
+.tmp/
+tmp/
