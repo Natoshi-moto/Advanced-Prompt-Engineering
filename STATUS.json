@@ -1,0 +1,29 @@
+{
+  "schema": "ape.status/v1",
+  "repository_id": "ADVANCED-PROMPT-ENGINEERING",
+  "current_round": "APE-R001",
+  "current_mode": "FOUNDATION_CANDIDATE",
+  "foundation_status": "CANDIDATE",
+  "canonical_target": null,
+  "active_tasks": [
+    "TASK-APE-0001"
+  ],
+  "active_route": "operations/routes/ROUTE-APE-0001.md",
+  "assurance_blocks": [],
+  "open_assurance_blocks": 0,
+  "open_defect_blocks": 0,
+  "last_completed_action": "INITIAL_REPOSITORY_CREATED_WITH_LICENSE",
+  "next_action_id": "ACT-APE-0001_REVIEW_FOUNDATION_PR",
+  "promotion_authority": "HUMAN_ONLY",
+  "epistemic_states": [
+    "LATERAL",
+    "CANDIDATE",
+    "LOCKED",
+    "IMPLEMENTED",
+    "DEMONSTRATED",
+    "FALSIFIED",
+    "SUPERSEDED",
+    "INFERRED",
+    "UNVERIFIED"
+  ]
+}
