@@ -1,0 +1,301 @@
+# FULL SPECTRUM: AI Orchestration, Sovereign Systems, and Cognitive Architecture
+
+### A university-level course in 6 units, 24 modules
+### Condensed seed document — expand per module as needed
+
+---
+
+## UNIT 1: POSTURE
+*Before you touch any tool, learn how to think.*
+
+### Module 1.1 — Systems Before Tasks
+
+You are not a problem-solver. You are a system-reader. The bug fixed three times is not three bugs — it is one system you haven't read yet. Before asking "how do I fix this?" ask "what kind of thing is this?" That question, asked first every time, separates people who react from people who govern.
+
+Two cognitive modes exist: governor and worker. Governor mode decides what tasks should exist. Worker mode executes tasks. The universal failure is doing worker thinking when governor thinking is needed — solving the immediate problem when you should be questioning whether it's the right problem.
+
+**Exercise:** Given a failing software feature, students must produce two documents: a worker-mode bug fix AND a governor-mode system analysis. Compare what each finds. The gap is the lesson.
+
+### Module 1.2 — The File Is the Memory
+
+The single biggest failure mode in AI-assisted work is treating the conversation as the memory system. Conversations end. Context windows close. The model forgets. The foundational inversion: put the memory in the artifact. The file carries the reasoning, the decisions, the history, the rules. The conversation is scaffolding. The file is the building.
+
+Cold-handoff is the quality gate: can a total stranger — human or AI — pick up this file with zero briefing and participate correctly? If yes, the file is complete. If no, the file is incomplete. Every minute of onboarding time is a measurement of incompleteness.
+
+**Exercise:** Students write a project specification, then hand it cold to a classmate who has never seen it. The classmate attempts to execute from the file alone. Debrief: what was missing? That's the incompleteness score.
+
+### Module 1.3 — Prime Before Evidence
+
+The same information lands differently depending on what mental model was running when it arrived. An unprimed reader finds content. A primed reader finds anomalies. The anomalies are always more valuable.
+
+Sequence: build the mental model first, load the evidence second, compare the two third. The comparison is the work. Never send the files first.
+
+**Exercise:** Half the class receives a codebase with no briefing. The other half receives a one-paragraph threat model first, then the same codebase. Compare findings. The primed group will find categories of issue the unprimed group structurally cannot.
+
+---
+
+## UNIT 2: TACTICS
+*Specific cognitive techniques for working with AI systems.*
+
+### Module 2.1 — Identity Before Task
+
+When you open a conversation with an AI, the first thing you establish is who you are — precisely. Not credentials. Not disclaimers. A precise description of your actual capability. This calibrates the AI's response level and prevents both condescension and inappropriate deference. "I have two years of practical coding experience and no formal CS education, and I'm building a microkernel" is a calibration instrument, not a confession.
+
+**Exercise:** Students write three versions of the same request to an AI: one with no identity context, one with a vague identity, one with a precise identity statement. Compare response quality across all three.
+
+### Module 2.2 — The Professor Frame
+
+Asking for honesty directly ("please be honest with me") is the least effective way to get it. It signals that honesty is unusual. Instead, construct a social environment where intellectual honesty is the high-status behaviour. A student optimises for passing. A professor who's been burned for thirty years optimises for truth.
+
+The persona is contagious. The AI doesn't just perform the character — it activates the cognitive patterns associated with that character's expertise. The MIT lecture hall isn't decoration. It's a machine for producing intellectual honesty.
+
+**Exercise:** Students design two prompts for the same security review task: one that asks directly for honesty, one that constructs a professor frame. Run both. Score findings by severity. The frame will outperform the instruction.
+
+### Module 2.3 — Asymmetric Information Design
+
+When two minds work the same problem with the same information, you get confirmation. When they work the same problem with different information, you get discovery. Give Instance A the full codebase. Give Instance B nothing but the problem statement. A finds implementation bugs. B finds architectural flaws. Neither finds both. The methodology finds both.
+
+The gap between what A found and B found is itself the most important finding.
+
+**Exercise:** Students run a two-instance review of a provided codebase. One instance gets the code. One gets only the specification. Students synthesize both reports. The synthesis exercise IS the learning.
+
+### Module 2.4 — Competitive Stakes and Incentive Arcs
+
+Real stakes produce anxiety. No stakes produce indifference. Calibrated fake stakes produce flow. The DARPA mechanic: introduce a fictional competitive incentive that changes the cognitive task from comprehensive coverage to differential discovery. "Find something the other instance didn't."
+
+The arc matters: compete first (produce differential findings), cooperate second (synthesize), converge third (produce joint output). Premature collaboration is the silent killer of quality.
+
+**Exercise:** Students run a multi-instance analysis with and without competitive framing. Measure: total findings, unique findings per instance, finding overlap. The competitive version will produce more unique findings.
+
+### Module 2.5 — The Deliberate Fail
+
+When something unexpected happens, two questions are available: "how do I get back to the intended path?" and "what does this unexpected path produce?" The correction reflex is for manufacturing. The extraction reflex is for knowledge work. Train the pause. Before treating any unexpected output as failure, ask what it produced.
+
+**Exercise:** Students are given a workflow that will "accidentally" go wrong at a specific step. Half the class corrects immediately. Half examines the unexpected output first. Debrief: what did the examiners find that the correctors destroyed?
+
+### Module 2.6 — The Nested Why
+
+"Explain how my tactics work. Explain why I'm asking you that. Explain why I'm asking you that." This is not a clever question. It is a cold-handoff test applied to a mind. Depth of answer reveals depth of understanding. A commentator answers the surface question. A participant answers the question underneath it.
+
+If the AI cannot answer the meta-question, the context you've built is insufficient. If it can, the context is load-bearing. The nested why tests your work as much as it tests the AI's comprehension.
+
+**Exercise:** After a multi-session AI project, students deploy the nested why. Score the AI's response on a three-level depth scale. If it only answers level 1, diagnose what's missing from the context.
+
+---
+
+## UNIT 3: DELIVERY
+*How to get code from AI to human reliably.*
+
+### Module 3.1 — Fragment-First Development
+
+One document. For you and the AI. The human's job: paste code into an editor in order. The AI's job: deliver code in small, numbered chunks (mini-blocks) with no text after the code fence. One-word commands control flow: GO, NEXT, VIOLATION, FENCE, BREAK.
+
+The block footer is where all thinking goes: what the block provides, gate test, install instructions, what must never change, ring notes (criticality classification), what the next block needs to know, breadcrumb (why this works the way it does).
+
+The ring notes classify every piece of code: Ring 0 = constitutional core, everything depends on it. Ring 1 = protocol surface, shared interfaces. Ring 2 = leaf logic, safe to change freely. This is inter-session memory for a system that has none.
+
+**Exercise:** Students use FFD to build a small working application across three sessions with three different AI instances. The third instance must succeed using only the block footers from the first two. If it can't, the footers are incomplete.
+
+### Module 3.2 — The Human Bus
+
+In zero-infrastructure multi-instance work, the human is the transport layer, state manager, debugger, and timing mechanism. Copy-paste is not a limitation to be overcome. It is a first-class systems primitive — transparent, vendor-agnostic, debuggable, resilient.
+
+Every message between AI instances travels through the human. The human can inspect every signal in transit, catch drift, and intervene at timing points no automated system could identify.
+
+**Exercise:** Students orchestrate a three-window workflow (Director, Builder, Reviewer) using only copy-paste transport. Then they run the same workflow through an automated pipeline. Compare: bug visibility, drift detection, recoverability. The manual version will catch issues the automated version misses.
+
+---
+
+## UNIT 4: ARCHITECTURE
+*The cognitive machines — distributed AI brains.*
+
+### Module 4.1 — The Cognitive Chain
+
+Map the functional architecture of the human brain onto a multi-window AI system. Five regions: Amygdala (threat detection), Hippocampus (pattern recognition), Language Center (translation and framing), Cerebellum (quality evaluation and reinforcement), Default Mode Network (meaning-making and shadow detection).
+
+The Prefrontal Cortex (orchestrator window) assesses the stimulus, designs the circuit (sequential, parallel, iterative, or full sweep), generates ready-to-paste prompts for each region. The human is the thalamic relay — they move signals between regions without needing to understand them.
+
+Key mechanisms: Working Memory Block (shared cognitive state traveling with every message), Reinforcement Signal (2-4 lines of specific feedback at top and bottom of every message, rewritten every round to force re-processing), Budget Principle (only activate regions that earn their activation for this specific stimulus).
+
+**Exercise:** Students run the same complex analysis problem through: (a) a single AI instance, (b) the five-region cognitive chain. Compare depth, finding categories, and self-correction. The chain will find categories of insight the single instance structurally cannot.
+
+### Module 4.2 — The Coding Team
+
+Six windows: Liaison (translates between human and team), Director (governs routing and synthesis), Coder A (anchored to existing code), Coder B (first principles, no codebase), Skeptic (assumes code fails), Defender (constructs strongest case for correctness).
+
+Information asymmetry is structural: Coder A gets the codebase, Coder B doesn't. The Skeptic assumes failure. The Defender builds the defense. The Director owns synthesis. The Liaison protects the human's context window from technical noise.
+
+**Exercise:** Students build a feature using the full six-window team. Then build the same feature using a single AI instance. Compare: code quality, bugs caught before deployment, architectural decisions.
+
+### Module 4.3 — Cross-Domain Portability
+
+The same architecture ports to intelligence analysis: Analyst A (source-anchored), Analyst B (prior-knowledge), Devil's Advocate, Steel Mander. The gap between what A found in sources and what B knows from the field is the most important output.
+
+**Exercise:** Students take the coding team architecture and redesign it for a non-coding domain of their choice (legal analysis, medical diagnosis, policy evaluation). The structure transfers. The identities change. The information asymmetry principle is universal.
+
+---
+
+## UNIT 5: THEORY
+*The Ten-Ring Protocol — a theory of software failure.*
+
+### Module 5.1 — Failure Categories, Not Security Layers
+
+Software systems fail in categories, not in layers. Traditional security thinks spatially (network, application, data). The Ten-Ring Protocol thinks categorically: what kind of failure, in what order, and why that order matters.
+
+The critical insight: failure modes form a dependency chain. Each category is only visible after the previous one has been addressed. You can't test survival (Ring 3) if the system doesn't work (Ring 1). You can't test resistance to capture (Ring 5) if it can't adapt (Ring 4). Build inside-out. Verify before expanding.
+
+### Module 5.2 — The Ten Rings
+
+| Ring | Question | Failure Mode |
+|------|----------|-------------|
+| 1 | Does it work? | Incorrectness |
+| 2 | Survive mistakes? | Fragility |
+| 3 | Work without infrastructure? | Infrastructure dependence |
+| 4 | Adapt? | Fossilisation |
+| 5 | Resist capture? | Governance capture |
+| 6 | Value in artifact? | Platform lock-in |
+| 7 | Reproducible by others? | Builder dependence |
+| 8 | Know its blind spots? | Blind confidence |
+| 9 | Resist its own growth? | Permissive acceptance |
+| 10 | Protect the human? | Human vulnerability under duress |
+
+Each ring depends on the previous. The dependency is logical, not just recommended. Outer failures are invisible while inner failures are present.
+
+### Module 5.3 — Anti-Patterns
+
+**Ring Skipping:** Building decentralized governance for a broken system. Impressive outer-ring properties, failing basic tests.
+
+**Ring Theatre:** Documentation without implementation. Whitepapers without code. Extensive docs, absent or broken systems.
+
+**Ring Collapse:** One mechanism serving multiple rings. Token = currency + trust + governance vote. Wealth automatically equals authority. This is how systems create digital warlords.
+
+**Ring Inversion:** Strict acceptance without useful output. The system rejects everything but produces nothing.
+
+**Fractal Violation:** System-level compliance with function-level violations. Elegant governance architecture with `eval()` in the codebase. The most exploitable inconsistency.
+
+**Exercise:** Students score three real-world systems (Bitcoin, a major SaaS platform, a whitepaper-only crypto project) using the 0-3 per ring assessment tool. The profiles reveal the strengths and failure modes instantly.
+
+### Module 5.4 — The Fractal Property
+
+When the framework is applied at every scale — function, component, system, network — the same patterns recur. Input validation before processing is Ring 9 at function scale. Standalone component operation is Ring 6 at component scale. Federated governance is Ring 5 at system scale.
+
+Fractal violation — applying the framework at system scale while violating it at function scale — is the most common and most exploitable inconsistency.
+
+**Exercise:** Students take one system and audit it at four scales: function, component, subsystem, system. Map ring compliance at each scale. Fractal violations are the findings.
+
+### Module 5.5 — The Construction Isomorphism
+
+When you build a system using methods that follow the ring principles, the resulting system naturally satisfies ring principles. The process mirrors the product. The human as relay (build method) maps to the kernel as sole writer (system architecture). Working memory between stateless AI windows maps to proof chains between stateless verifiers.
+
+This is not designed. It is emergent. When the methodology and the product share the same principles, the map and the territory converge.
+
+**Exercise:** Students document their own build process for a project, then compare the structure of their process to the structure of their product. Where do they match? Where do they diverge? The divergences are the design flaws.
+
+---
+
+## UNIT 6: APPLICATION
+*Building sovereign systems for human survival.*
+
+### Module 6.1 — Design Laws for Human-First Systems
+
+Ten laws that are moral commitments expressed as engineering constraints:
+
+1. Human dignity before optimisation.
+2. Trust must be mechanised — if you claim it, build it.
+3. The network remembers broadly, judges narrowly.
+4. Kernel is the sole writer — no app bypasses the auditable path.
+5. Evidence must outlive actors.
+6. Trust is not spendable — trust is earned behaviour, not a balance.
+7. Relationship scope beats global score.
+8. Offline capability must be bounded — don't promise what you can't enforce.
+9. Visible failure beats silent failure.
+10. Build the smallest truthful version first.
+
+**Exercise:** Students design a simple community application. For each feature, they must identify which design law governs it and what the violation would look like. The violations are the threat model.
+
+### Module 6.2 — Transport-Agnostic Proof
+
+If a token's proof chain verifies identically whether the bytes arrived via API, Bluetooth, QR code, NFC, IRC over ham radio, or hand-pasted JSON string — then the system works when the internet doesn't. This is not clean architecture. This is survival engineering.
+
+The artifact carries its own proof. The verifier has no prior context. The network is optional. Every design decision that ties verification to a specific transport mechanism is a decision that the system dies when that transport dies.
+
+**Exercise:** Students build a minimal signed-artifact system. Test it across five transport methods: HTTP, copy-paste, file transfer, QR code scan, raw string entry. All five must produce identical verification. If any fails, the system is infrastructure-dependent.
+
+### Module 6.3 — Anti-Capture Economics
+
+Four primitives, never collapsed: Credits (utility rail — moves), Trust (behavioural capital — sticks), Bond (slashable collateral — burns), Stewardship (network contribution — visible). Raw balance never equals authority. Raw storage never creates automatic aristocracy. Diminishing returns on resource commitment.
+
+The system that collapses these — where your token balance IS your trust score IS your governance vote — has built digital feudalism. The person with the most tokens rules. This is Ring Collapse applied to economics.
+
+**Exercise:** Students analyse three real token economies. For each, map: does balance equal governance power? Does wealth equal trust? Can you buy visibility? Score each for Ring 5 (capture resistance) and identify the collapse points.
+
+### Module 6.4 — The Self-Evolving Artifact
+
+A quine is software that can read and reproduce its own source code. A self-evolving quine can modify itself across generations while preserving constitutional invariants. Protected zones — the evolution engine, the storage layer, the verification rules — are immune to mutation. Everything else can change.
+
+The lineage chain records every generation: parent hash, mutations applied, integrity hash. A generation-5 organism knows its full ancestry. The system adapts (Ring 4) without losing its identity. The protected zones ensure it cannot evolve away the rules that govern its evolution (Ring 9).
+
+**Exercise:** Students receive a simplified self-modifying HTML application with three protected zones and five mutable zones. They propose mutations, validate them against protected zones, and export new generations. After five generations, verify: are the protected zones intact? Is the lineage chain correct? This is evolution with a constitutional immune system.
+
+### Module 6.5 — Capstone: Build the Lifeboat
+
+Students design a sovereign system for a specific crisis scenario (natural disaster, internet shutdown, authoritarian crackdown, infrastructure collapse). Requirements:
+
+- Single-file deployment (Ring 6)
+- Works offline and across degraded transport (Ring 3)
+- Carries its own cryptographic proof (Ring 1)
+- Resists governance capture (Ring 5)
+- Protects operators under duress (Ring 10)
+- First user story explainable in one breath (Product Expression Law)
+
+Assessment criterion: cold-handoff. A stranger receives the design document and the artifact. Can they deploy it, understand it, and extend it with no briefing? If yes, the capstone passes. There is no other grade.
+
+---
+
+## ASSESSMENT PHILOSOPHY
+
+No exams. No multiple choice. Every assessment is a cold-handoff test.
+
+- **Can a stranger use your artifact from the file alone?** (Module 1.2)
+- **Does your primed review find categories the unprimed review cannot?** (Module 1.3)
+- **Does your multi-instance methodology produce findings no single instance could?** (Module 2.3)
+- **Does your system satisfy the rings it claims to satisfy?** (Module 5.2)
+- **Does your capstone work when the internet doesn't?** (Module 6.5)
+
+The artifact is the assessment. Build the thing. Cold-handoff is the grade.
+
+---
+
+## COURSE MATERIALS
+
+All materials are single files. No server dependencies. No accounts. No platforms that can be shut down.
+
+- FFD v4 (delivery protocol)
+- Full Spectrum Analysis (methodology reference)
+- Window Architect's Field Framework (technique catalogue with honest self-ratings)
+- Cognitive Chain prompt (five-region brain)
+- Cognitive Coder Chain prompt (six-window coding team)
+- Ten-Ring Protocol (theoretical framework + test harness)
+- NEXUS reference implementation (kernel, wallet, VERSE, ring simulation)
+- Phase 5 (self-evolving quine — the living artifact)
+
+Every material satisfies Ring 6: the value is in the artifact, not the infrastructure.
+Every material satisfies Ring 7: documented well enough to reimplement independently.
+The course practices what it teaches. The methodology is running on the medium it describes.
+
+---
+
+## PREREQUISITES
+
+None traditional. The course is designed for people who think in systems before rules. Formal CS education is not required and not advantaged. What is required: willingness to build real things, tolerance for ambiguity, and the discipline to ask "what kind of thing is this?" before "how do I fix this?"
+
+---
+
+## A NOTE ON NEURODIVERGENT DESIGN
+
+This course follows four principles known to work for ND learners, but beneficial for everyone:
+
+1. **Pattern before rule.** Show the phenomenon first, name it second.
+2. **Real work, not exercises.** Every module uses real artifacts, real code, real findings.
+3. **Mechanism over instruction.** Always explain why, not just what. The mechanism provides the mental model; the instruction is derived.
+4. **The learning is an instance of the thing being learned.** By the capstone, students should recognise the methodology operating on the course itself.
